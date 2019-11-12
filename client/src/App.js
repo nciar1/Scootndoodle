@@ -7,8 +7,11 @@ import NotFound from "./views/NotFound"
 import Footer from './components/Footer/Footer';
 import Container from 'react-bootstrap/Container'
 import {ShopPreview} from './components/ShopPreview/ShopPreview'
+import {Cart} from './components/Cart/Cart'
+import {CustomerInfo} from './components/CustomerInfo/CustomerInfo'
 
 import './App.css'
+
 
 
 const App = () => {
@@ -20,6 +23,8 @@ const App = () => {
         </Route>
         <Route exact path='/Shop' component={Shop} />
         <Route exact path='/ShopPreview' component={ShopPreview}/>
+        <Route exact path='/Cart' component={Cart}/>
+        <Route exact path='/CustomerInfo' component={CustomerInfo}/>
         <Route exact path="/Media" component={Media} />
         <Route component={NotFound}/>
       </Switch>

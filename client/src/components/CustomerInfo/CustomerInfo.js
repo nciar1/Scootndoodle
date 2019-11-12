@@ -1,19 +1,28 @@
 import React from 'react'
 import Footer from '../../components/Footer/Footer'
-import productPhotos from './DSC_0056.JPG'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import $ from 'jquery'
 import { Link } from 'react-router-dom';
 import './CustomerInfo.css'
 
 
-export const Cart = () => (
+export const CustomerInfo = () => (
 <Container className = 'customer-info-container'>
-    <h>
+    
+<nav>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Cart</a></li>
+        <li class="breadcrumb-item"><a href="#">Shop</a></li>
+        <li class="breadcrumb-item active">Place Order</li>
+    </ol>
+</nav>
+    
+    <h1>
         Customer Information
-    </h>
+    </h1>
+    <hr />
 
     <div className="container">
         <form>
@@ -35,7 +44,7 @@ export const Cart = () => (
             <hr />
 
             <h1> Shipping Information </h1>
-            //
+            <hr />
             <div class = "form-group">
                 <label for = "address"> Street Address 1: </label>
                 <input type= "address" class = "form-control" id="address" placeholder ="Enter Address"></input>
@@ -66,12 +75,6 @@ export const Cart = () => (
   <button className="payments" type="button">Proceed to Payment</button>
   </Link>
 		</div>
-
-
-
-
-    </div>
-
 
 
 </Container>
