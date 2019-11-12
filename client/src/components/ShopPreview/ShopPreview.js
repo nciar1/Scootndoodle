@@ -6,6 +6,8 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import $ from 'jquery'
 import './ShopPreview.css'
+import { Link } from 'react-router-dom';
+
 
 
 export const ShopPreview = () => (
@@ -75,14 +77,15 @@ export const ShopPreview = () => (
 					</div>
 				</div>
 			</div>
+            <Link to="/Cart">
+  <button className="add-to-cart btn btn-default" type="button">Proceed to Cart</button>
+  </Link>
 		</div>
 
-    
         
 
-
-
  </Container>  
+ 
 
 
 
