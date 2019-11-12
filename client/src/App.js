@@ -6,6 +6,7 @@ import Media   from "./components/Media/Media"
 import NotFound from "./views/NotFound"
 import Footer from './components/Footer/Footer';
 import Container from 'react-bootstrap/Container'
+import {ShopPreview} from './components/ShopPreview/ShopPreview'
 
 import './App.css'
 
@@ -18,6 +19,7 @@ const App = () => {
           <Redirect to="/Home" />
         </Route>
         <Route exact path='/Shop' component={Shop} />
+        <Route exact path='/ShopPreview' component={ShopPreview}/>
         <Route exact path="/Media" component={Media} />
         <Route component={NotFound}/>
       </Switch>
