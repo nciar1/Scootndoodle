@@ -1,0 +1,38 @@
+.cart-container{
+    padding-bottom:  0 rem;
+    padding-top: 0 rem;
+    vertical-align: right;
+    float: right;
+	width: 30%;
+    padding: 100 px;
+    background-color: #000000 ;
+}
+
+table tbody td .form-control{
+    width:20%;
+    display: inline !important;
+}
+.actions .btn{
+    width:36%;
+    margin:1.5em 0;
+}
+
+.actions .btn-info{
+    float:left;
+}
+.actions .btn-danger{
+    float:right;
+}
+
+table thead { display: none; }
+table body td { display: block; padding: .6rem; min-width:320px;}
+table body tr td:first-child { background: #333; color: #fff; }
+table body td:before {
+    content: attr(data-th); font-weight: bold;
+    display: inline-block; width: 8rem;
+}
+
+
+
+table foot td{display:block; }
+table foot td .btn{display:block;}
