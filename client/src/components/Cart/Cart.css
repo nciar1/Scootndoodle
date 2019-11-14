@@ -24,7 +24,7 @@ table tbody td .form-control{
     float:right;
 }
 
-table thead { display: none; }
+
 table body td { display: block; padding: .6rem; min-width:320px;}
 table body tr td:first-child { background: #333; color: #fff; }
 table body td:before {
@@ -36,3 +36,22 @@ table body td:before {
 
 table foot td{display:block; }
 table foot td .btn{display:block;}
+
+
+.browser-default custom-select{
+
+}
+
+@media (min-width: 250px) {
+    .cart-overview-container{
+        width:250px;
+        font-size:small ;
+    }}
+
+    .input-group-btn{
+        width:150px;
+        font-size:small
+    }
+
+
+ 

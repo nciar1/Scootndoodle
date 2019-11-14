@@ -18,7 +18,7 @@ export const Home = () => (
         <Video />
         <ReviewSlider data={sliderData}/>
         <MissionStatement />
-        <ShopPreview />
+        
         <About />
         <Media />
     </React.Fragment>

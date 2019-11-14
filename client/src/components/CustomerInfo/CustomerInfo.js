@@ -12,9 +12,9 @@ export const CustomerInfo = () => (
     
 <nav>
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item"><a href="#">Cart</a></li>
-        <li class="breadcrumb-item"><a href="#">Shop</a></li>
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item"><a href="ShopPreview">Shop</a></li>
+        <li class="breadcrumb-item"><a href="/Cart">Cart</a></li>
         <li class="breadcrumb-item active">Place Order</li>
     </ol>
 </nav>
