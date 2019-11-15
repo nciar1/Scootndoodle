@@ -5,6 +5,9 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { Link } from 'react-router-dom';
 import './CustomerInfo.css'
+import { CartOverview } from '../Cart/CartOverview'
+
+
 
 
 export const CustomerInfo = () => (
@@ -18,6 +21,10 @@ export const CustomerInfo = () => (
         <li class="breadcrumb-item active">Place Order</li>
     </ol>
 </nav>
+
+<div class="container">
+  <div class="row">
+  <div class="col-9">
     
     <h1>
         Customer Information
@@ -71,10 +78,29 @@ export const CustomerInfo = () => (
             </div>
         </form>
 
-        <Link to="/Payments">
-  <button className="payments" type="button">Proceed to Payment</button>
-  </Link>
 		</div>
+        </div>
+
+
+        <div class="col-md-3">
+			<CartOverview/>
+			<div class="text-center">
+			<Link to="/CustomerInfo">
+  <button className="add-to-cart btn btn-default" type="button">Proceed Payment</button>
+  </Link>
+  
+		
+
+</div>
+		
+      
+</div> 
+
+
+        </div>
+
+ 
+</div>  
 
 
 </Container>

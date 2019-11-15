@@ -68,6 +68,7 @@ export const Cart = () => (
 			<Link to="/CustomerInfo">
   <button className="add-to-cart btn btn-default" type="button">Proceed to Order</button>
   </Link>
+  
 		
 </div>
 </div>
