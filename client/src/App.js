@@ -7,7 +7,7 @@ import Container from 'react-bootstrap/Container'
 import {ShopPreview} from './components/ShopPreview/ShopPreview'
 import {Cart} from './components/Cart/Cart'
 import {CustomerInfo} from './components/CustomerInfo/CustomerInfo'
-
+import {CartOverview} from './components/Cart/CartOverview'
 import './App.css'
 
 

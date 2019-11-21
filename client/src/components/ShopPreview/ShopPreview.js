@@ -7,6 +7,7 @@ import Col from 'react-bootstrap/Col'
 import $ from 'jquery'
 import './ShopPreview.css'
 import { Link } from 'react-router-dom';
+import { CartOverview } from '../Cart/CartOverview'
 
 
 
@@ -14,11 +15,20 @@ export const ShopPreview = () => (
 
 
 <Container className = 'container'>
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="/">Home</a></li>
+  <li class="breadcrumb-item active">Shop</li>
+</ol>
+
+
     <h>
         Scoot n Doodle Shop
     </h>
     <hr/>
 
+	<div class="row">
+  <div class="col-9">
     <div className="shop-container">
 		<div className="card">
 				<div className="wrapper row">
@@ -36,7 +46,7 @@ export const ShopPreview = () => (
 						</div>
 
                         <div className="action">colors: 
-                        <button className="blue-button" type="button"></button>
+                        <button className="blue-button" type="radio"></button>
                         <button className="green-button" type="button"></button>
 						</div>
 
@@ -77,12 +87,33 @@ export const ShopPreview = () => (
 					</div>
 				</div>
 			</div>
-            <Link to="/Cart">
-  <button className="add-to-cart btn btn-default" type="button">Proceed to Cart</button>
-  </Link>
+
+			
+
+          
+		</div>
+		
+
 		</div>
 
-        
+		
+		<div class="col-md-3">
+			<CartOverview/>
+			<div class="text-center">
+			<Link to="/Cart">
+  <button className="add-to-cart btn btn-default" type="button">Proceed to Cart</button>
+  </Link>
+		
+</div>
+			
+		</div>
+		
+		</div>
+		
+
+
+	
+		
 
  </Container>  
  
